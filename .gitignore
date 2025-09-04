@@ -2,7 +2,6 @@
 node_modules/
 
 # Build output
-dist/
 *.css
 *.css.map
 
@@ -11,6 +10,8 @@ text.css
 text.css.map
 text.scss
 index.html
+.prettierrc
+.eslintrc.json
 
 # Logs
 npm-debug.log*
