@@ -1,0 +1,11 @@
+@mixin withShadow($boxShadow: null, $textShadow: null, $glow: null, $inset: false) {
+  @if $boxShadow != null {
+    box-shadow: if($inset, inset $boxShadow, $boxShadow);
+  }
+  @if $textShadow != null {
+    text-shadow: $textShadow;
+  }
+  @if $glow != null {
+    box-shadow: 0 0 $glow;
+  }
+}

@@ -1,0 +1,11 @@
+@mixin withBorder($border: null, $borderRadius: null, $outline: null) {
+  @if $border != null {
+    border: $border;
+  }
+  @if $borderRadius != null {
+    border-radius: $borderRadius;
+  }
+  @if $outline != null {
+    outline: $outline;
+  }
+}

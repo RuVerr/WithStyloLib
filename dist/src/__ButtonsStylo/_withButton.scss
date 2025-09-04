@@ -1,0 +1,115 @@
+@mixin withButton(
+  $fontFamily: null,
+  $fontSize: null,
+  $bgColor: null,
+  $color: null,
+  $textAlign: null,
+  $border: null,
+  $padding: null,
+  $margin: null,
+  $borderRadius: null,
+  $shadow: null,
+  $width: null,
+  $height: null,
+  $transition: null,
+  $hoverBg: null,
+  $hoverColor: null,
+  $hoverShadow: null,
+  $hoverBorder: null,
+  $hoverTransition: null,
+  $activeBg: null,
+  $activeColor: null,
+  $activeShadow: null,
+  $activeBorder: null,
+  $activeTransition: null,
+  $copyText: false,
+  $disabled: false
+) {
+  cursor: pointer;
+  user-select: if($copyText, auto, none);
+
+  @if $fontFamily != null {
+    font-family: $fontFamily;
+  }
+  @if $fontSize != null {
+    font-size: $fontSize;
+  }
+  @if $bgColor != null {
+    background-color: $bgColor;
+  }
+  @if $color != null {
+    color: $color;
+  }
+  @if $textAlign != null {
+    text-align: $textAlign;
+  }
+  @if $border != null {
+    border: $border;
+  }
+  @if $padding != null {
+    padding: $padding;
+  }
+  @if $margin != null {
+    margin: $margin;
+  }
+  @if $borderRadius != null {
+    border-radius: $borderRadius;
+  }
+  @if $shadow != null {
+    box-shadow: $shadow;
+  }
+  @if $width != null {
+    width: $width;
+  }
+  @if $height != null {
+    height: $height;
+  }
+
+  @if $disabled == true {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @if $transition != null {
+    transition: $transition;
+  } @else {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    @if $hoverTransition != null {
+      transition: $hoverTransition;
+    }
+    @if $hoverBg != null {
+      background-color: $hoverBg;
+    }
+    @if $hoverColor != null {
+      color: $hoverColor;
+    }
+    @if $hoverShadow != null {
+      box-shadow: $hoverShadow;
+    }
+    @if $hoverBorder != null {
+      border: $hoverBorder;
+    }
+  }
+
+  &:active {
+    @if $activeTransition != null {
+      transition: $activeTransition;
+    }
+    @if $activeBg != null {
+      background-color: $activeBg;
+    }
+    @if $activeColor != null {
+      color: $activeColor;
+    }
+    @if $activeShadow != null {
+      box-shadow: $activeShadow;
+    }
+    @if $activeBorder != null {
+      border: $activeBorder;
+    }
+  }
+}

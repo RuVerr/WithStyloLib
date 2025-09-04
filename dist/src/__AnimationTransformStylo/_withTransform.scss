@@ -1,0 +1,17 @@
+@mixin withTransform($normal: null, $hover: null, $active: null) {
+  @if $normal != null {
+    transform: $normal;
+  }
+
+  &:hover {
+    @if $hover != null {
+      transform: $hover;
+    }
+  }
+
+  &:active {
+    @if $active != null {
+      transform: $active;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@mixin withGrid(
+  $columns: null,
+  $rows: null,
+  $gap: null,
+  $justify: null,
+  $align: null,
+  $flow: null
+) {
+  display: grid;
+
+  @if $columns != null {
+    grid-template-columns: $columns;
+  }
+
+  @if $rows != null {
+    grid-template-rows: $rows;
+  }
+
+  @if $gap != null {
+    gap: $gap;
+  }
+
+  @if $justify != null {
+    justify-items: $justify;
+  }
+
+  @if $align != null {
+    align-items: $align;
+  }
+
+  @if $flow != null {
+    grid-auto-flow: $flow;
+  }
+}

@@ -1,0 +1,12 @@
+@mixin withMedia($maxWidth: null, $minWidth: null) {
+  @if ($maxWidth != null) {
+    @media (max-width: $maxWidth) {
+      @content;
+    }
+  }
+  @if ($minWidth != null) {
+    @media (min-width: $minWidth) {
+      @content;
+    }
+  }
+}

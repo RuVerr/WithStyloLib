@@ -1,0 +1,23 @@
+@mixin withBackground(
+  $color: null,
+  $repeat: null,
+  $position: null,
+  $size: null,
+  $attachment: null
+) {
+  @if $color != null {
+    background-color: $color;
+  }
+  @if $repeat != null {
+    background-repeat: $repeat;
+  }
+  @if $position != null {
+    background-position: $position;
+  }
+  @if $size != null {
+    background-size: $size;
+  }
+  @if $attachment != null {
+    background-attachment: $attachment;
+  }
+}

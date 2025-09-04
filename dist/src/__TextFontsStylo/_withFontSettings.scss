@@ -1,0 +1,35 @@
+@mixin withFont(
+  $font-family: null,
+  $font-size: null,
+  $white-space: null,
+  $user-select: null,
+  $font-weight: null,
+  $line-height: null,
+  $letter-spacing: null
+) {
+  @if $font-family != null {
+    font-family: $font-family;
+  }
+  @if $font-size != null {
+    font-size: $font-size;
+  }
+  @if $white-space != null {
+    white-space: $white-space;
+  }
+  @if $user-select != null {
+    @if $user-select == true {
+      user-select: text;
+    } @else if $user-select == false {
+      user-select: none;
+    }
+  }
+  @if $font-weight != null {
+    font-weight: $font-weight;
+  }
+  @if $line-height != null {
+    line-height: $line-height;
+  }
+  @if $letter-spacing != null {
+    letter-spacing: $letter-spacing;
+  }
+}

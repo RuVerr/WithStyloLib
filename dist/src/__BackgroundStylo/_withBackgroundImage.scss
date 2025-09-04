@@ -1,0 +1,15 @@
+@mixin withBackgroundImage(
+  $image: null,
+  $repeat: null,
+  $position: null,
+  $size: null,
+  $attachment: null,
+  $blend-mode: null
+) {
+  @if $image != null { background-image: $image; }
+  @if $repeat != null { background-repeat: $repeat; }
+  @if $position != null { background-position: $position; }
+  @if $size != null { background-size: $size; }
+  @if $attachment != null { background-attachment: $attachment; }
+  @if $blend-mode != null { background-blend-mode: $blend-mode; }
+}

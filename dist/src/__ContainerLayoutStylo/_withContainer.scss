@@ -1,0 +1,22 @@
+// @mixin withContainer($max-width: null) {
+//   @if $max-width != null {
+//     max-width: $max-width;
+//   }
+//   margin: auto;
+// }
+
+@mixin withContainer($class: null, $max-width: null, $margin: null, $padding: null) {
+  @if $class != null {
+    .#{$class} {
+      @if $max-width != null {
+        max-width: $max-width
+      }
+      @if $margin != null {
+        margin: $margin
+      }
+      @if $padding != null {
+        padding: $padding
+      }
+    }
+  }
+}

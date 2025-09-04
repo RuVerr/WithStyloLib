@@ -1,0 +1,9 @@
+@mixin bgFixedAndCenter($zIndex: null) {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @if ($zIndex != null) {
+    z-index: $zIndex;
+  }
+}

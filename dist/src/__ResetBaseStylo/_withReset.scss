@@ -1,0 +1,84 @@
+@mixin withReset () {
+  /* Box sizing and remove animations/transitions for accessibility */
+  *, *::before, *::after {
+    box-sizing: border-box;
+    animation: none;
+    transition: none;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+  }
+
+  /* Remove default margin and padding */
+  body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul, ol, li, fieldset, legend {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Remove list styles */
+  ul, ol {
+    list-style: none;
+  }
+
+  /* Remove link styles */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Core body defaults */
+  body {
+    line-height: 1.5;
+    font-family: system-ui, sans-serif;
+    background-color: #fff;
+    color: #000;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Images */
+  img, picture {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* Form elements */
+  button, input, textarea, select {
+    font: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  /* Small text */
+  small {
+    font-size: 80%;
+  }
+
+  /* Hidden attribute */
+  [hidden] {
+    display: none;
+  }
+
+  /* Media defaults */
+  audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+  }
+
+  /* Reset interactive elements */
+  details, summary {
+    display: block;
+  }
+
+  progress {
+    vertical-align: baseline;
+  }
+}
