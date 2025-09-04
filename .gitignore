@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+*.css
+*.css.map
+
+# Ignoring build files and demos
+text.css
+text.css.map
+text.scss
+index.html
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Lock files (если не хочешь фиксировать версии локально)
+package-lock.json
+yarn.lock

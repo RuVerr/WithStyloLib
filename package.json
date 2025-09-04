@@ -1,0 +1,14 @@
+{
+  "name": "With Stylo",
+  "version": "0.1.0",
+  "description": "Flexible SCSS mixins and utilities starting with with*",
+  "main": "dist/with.scss",
+  "keywords": [
+    "scss",
+    "sass",
+    "mixins",
+    "with"
+  ],
+  "author": "Rubo Vermishyan",
+  "license": "MIT"
+}
