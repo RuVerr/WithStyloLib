@@ -2,8 +2,8 @@
   "name": "with-stylo",
   "version": "0.1.6",
   "description": "Flexible SCSS mixins and utilities starting with with*",
-  "main": "dist/_index.scss",
-  "style": "dist/_index.scss",
+  "main": "dist/index.scss",
+  "style": "dist/index.scss",
   "files": [
     "dist"
   ],
