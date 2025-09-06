@@ -1,0 +1,7 @@
+@mixin withButtonTransition($transition: null) {
+  @if $transition != null {
+    transition: $transition;
+  } @else {
+    transition: all 0.2s ease-in-out;
+  }
+}

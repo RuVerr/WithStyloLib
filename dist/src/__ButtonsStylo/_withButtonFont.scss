@@ -1,0 +1,14 @@
+@mixin withButtonFont($fontFamily: null, $fontSize: null, $color: null, $textAlign: null) {
+  @if $fontFamily != null {
+    font-family: $fontFamily;
+  }
+  @if $fontSize != null {
+    font-size: $fontSize;
+  }
+  @if $color != null {
+    color: $color;
+  }
+  @if $textAlign != null {
+    text-align: $textAlign;
+  }
+}

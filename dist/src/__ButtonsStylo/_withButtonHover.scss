@@ -1,0 +1,25 @@
+@mixin withButtonHover(
+  $hoverBg: null,
+  $hoverColor: null,
+  $hoverShadow: null,
+  $hoverBorder: null,
+  $hoverTransition: null
+) {
+  &:hover {
+    @if $hoverTransition != null {
+      transition: $hoverTransition;
+    }
+    @if $hoverBg != null {
+      background-color: $hoverBg;
+    }
+    @if $hoverColor != null {
+      color: $hoverColor;
+    }
+    @if $hoverShadow != null {
+      box-shadow: $hoverShadow;
+    }
+    @if $hoverBorder != null {
+      border: $hoverBorder;
+    }
+  }
+}

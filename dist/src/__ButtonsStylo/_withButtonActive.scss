@@ -1,0 +1,25 @@
+@mixin withButtonActive(
+  $activeBg: null,
+  $activeColor: null,
+  $activeShadow: null,
+  $activeBorder: null,
+  $activeTransition: null
+) {
+  &:active {
+    @if $activeTransition != null {
+      transition: $activeTransition;
+    }
+    @if $activeBg != null {
+      background-color: $activeBg;
+    }
+    @if $activeColor != null {
+      color: $activeColor;
+    }
+    @if $activeShadow != null {
+      box-shadow: $activeShadow;
+    }
+    @if $activeBorder != null {
+      border: $activeBorder;
+    }
+  }
+}

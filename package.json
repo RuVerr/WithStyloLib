@@ -1,6 +1,6 @@
 {
-  "name": "With Stylo",
-  "version": "0.1.0",
+  "name": "with-stylo",
+  "version": "0.1.1",
   "description": "Flexible SCSS mixins and utilities starting with with*",
   "main": "dist/with.scss",
   "keywords": [

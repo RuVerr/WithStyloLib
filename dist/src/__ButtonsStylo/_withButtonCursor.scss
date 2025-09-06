@@ -1,0 +1,4 @@
+@mixin withButtonCursor($copyText: false) {
+  cursor: pointer;
+  user-select: if($copyText, auto, none);
+}

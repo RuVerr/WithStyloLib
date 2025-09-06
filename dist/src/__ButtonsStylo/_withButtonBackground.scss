@@ -1,0 +1,11 @@
+@mixin withButtonBackground($bgColor: null, $border: null, $borderRadius: null) {
+  @if $bgColor != null {
+    background-color: $bgColor;
+  }
+  @if $border != null {
+    border: $border;
+  }
+  @if $borderRadius != null {
+    border-radius: $borderRadius;
+  }
+}

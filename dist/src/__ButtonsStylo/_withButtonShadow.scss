@@ -1,0 +1,5 @@
+@mixin withButtonShadow($shadow: null) {
+  @if $shadow != null {
+    box-shadow: $shadow;
+  }
+}
