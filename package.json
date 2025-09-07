@@ -1,6 +1,6 @@
 {
   "name": "with-stylo",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Flexible SCSS mixins and utilities starting with with*",
   "main": "index.scss",
   "style": "index.scss",
