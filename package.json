@@ -2,9 +2,11 @@
   "name": "with-stylo",
   "version": "0.1.10",
   "description": "Flexible SCSS mixins and utilities starting with with*",
-  "main": "dist/index.scss",
-  "style": "dist/index.scss",
+  "main": "index.scss",
+  "style": "index.scss",
+  "sass": "index.scss",
   "files": [
+    "index.scss",
     "dist"
   ],
   "keywords": [
@@ -14,8 +16,5 @@
     "with"
   ],
   "author": "Rubo Vermishyan",
-  "license": "MIT",
-  "engines": {
-    "vscode": "^1.103.0"
-  }
+  "license": "MIT"
 }
